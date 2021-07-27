@@ -1,0 +1,54 @@
+@font-face {
+    font-family:  "Sprat";
+    src: url(sprat-variable.ttf);
+  }
+  
+  body {
+    background-color: #e6decf;
+    
+    font-size: 40px;
+    font-family: Sprat;
+    font-weight: 400;
+    font-variation-settings: "wght" 100;
+    text-transform: uppercase;
+    padding: 0 15px;
+    margin: 60px;
+  }
+  
+  section {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  section div {
+    margin: 32px 32px 80px 32px;
+  }
+  
+  section img {
+    margin-bottom: 12px;
+  }
+
+  div.filled,
+  div.outline {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      
+      background-image: url(filled-logo.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      z-index: 0;
+  }
+
+  div.outline {
+      background-image: url(outline-logo.svg);
+      z-index: 2;
+  }
