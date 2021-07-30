@@ -13,9 +13,10 @@
     text-transform: uppercase;
     padding: 0 15px;
     margin: 60px;
+    overflow: scroll;
   }
-  
-  section {
+
+section {
     position: relative;
     z-index: 1;
     display: flex;
@@ -30,6 +31,7 @@
   
   section img {
     margin-bottom: 12px;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
   }
 
   div.filled,
